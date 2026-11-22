@@ -9,3 +9,5 @@ else
 {
     Console.WriteLine("Ошибка: введите корректное число.");
 }
+double kelvin = celsius + 273.15;
+Console.WriteLine($"{kelvin}°K = {celsius:F2}°C");
