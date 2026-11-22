@@ -9,5 +9,12 @@ else
 {
     Console.WriteLine("Ошибка: введите корректное число.");
 }
-double kelvin = celsius + 273.15;
-Console.WriteLine($"{kelvin}°K = {celsius:F2}°C");
+if (double.TryParse(Console.ReadLine(), out double celsius1))
+{
+    double kelvin = celsius1 * 9 / 5 + 32;
+    Console.WriteLine($"{celsius}°C = {kelvin:F2}°K");
+}
+else
+{
+    Console.WriteLine("Ошибка: введите корректное число.");
+}
